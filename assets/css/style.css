@@ -1,7 +1,10 @@
+
+
+/* --- Heading styles */
 .heading {
     text-align: center;
     font-size: 6rem;
-    font-style: "serif";
+    font-style: "Noto Serif";
     color: red;
 }
 
@@ -19,4 +22,78 @@
 
 body {
     background-color: white;
+    font-family: "Noto Serif", serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.controls-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* allows wrapping on smaller screens */
+    gap: 30px; /* space between buttons */
+    margin-top: 40px;
+}
+
+/* ACK - Chat GPT Button CSS code */
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Noto Serif";
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 10px solid transparent;
+}
+
+
+.btn--big {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    font-size: 1.5rem;
+    background-color: white;
+}
+
+.btn--yellow {
+    border-color: yellow;
+    color: yellow;
+}
+.btn--yellow:hover {
+    background-color: yellow;
+    color: white;
+}
+
+.btn--orange {
+    border-color: orange;
+    color: orange;
+}
+.btn--orange:hover {
+    background-color: orange;
+    color: white;
+}
+
+.btn--red {
+    border-color: red;
+    color: red;
+}
+.btn--red:hover {
+    background-color: red;
+    color: white;
+}
+
+.btn--green {
+    border-color: green;
+    color: green;
+}
+.btn--green:hover {
+    background-color: green;
+    color: white;
 }
