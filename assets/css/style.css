@@ -1,8 +1,22 @@
 .heading {
     text-align: center;
-    font-size: 3rem;
+    font-size: 6rem;
+    font-style: "serif";
+    color: red;
+}
+
+.header-p {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.logo {
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin: auto;
 }
 
 body {
-    background-color: yellow;
+    background-color: white;
 }
