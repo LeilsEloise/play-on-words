@@ -38,27 +38,46 @@ function askQuestion(difficulty) {
 
 // Adds Event Listeners once page is fully loaded 
 document.addEventListener("DOMContentLoaded", () => {
-    // Adds Event Listeners for our difficulty buttons 
-    document.querySelector(".btn--green").addEventListener("click", () => { askQuestion("easy"); });
-    document.querySelector(".btn--yellow").addEventListener("click", () => { askQuestion("medium"); });
-    document.querySelector(".btn--orange").addEventListener("click", () => { askQuestion("hard"); });
-    document.querySelector(".btn--red").addEventListener("click", () => { askQuestion("expert"); });
+     //ChatGPT code
+     // Difficulty Buttons (Game Page Only)
+    const easyBtn = document.querySelector(".btn--green");
+    const mediumBtn = document.querySelector(".btn--yellow");
+    const hardBtn = document.querySelector(".btn--orange");
+    const expertBtn = document.querySelector(".btn--red");
 
-    // Submit Answer Button - Ask ChatGPT code
-    document.getElementById("submit-answer").addEventListener("click", () => {
-        const userInput = document.getElementById("user-answer").value.trim().toLowerCase();
+    if (easyBtn) easyBtn.addEventListener("click", () => askQuestion("easy"));
+    if (mediumBtn) mediumBtn.addEventListener("click", () => askQuestion("medium"));
+    if (hardBtn) hardBtn.addEventListener("click", () => askQuestion("hard"));
+    if (expertBtn) expertBtn.addEventListener("click", () => askQuestion("expert"));
+    
+    // ChatGPT code
+    // Submit Answer Button (Game Page Only)
+    const submitBtn = document.getElementById("submit-answer");
+    if (submitBtn) {
+        submitBtn.addEventListener("click", () => {
+            const userInput = document.getElementById("user-answer").value.trim().toLowerCase();
 
-        if (!currentAnswer) {
-            alert("Please select a difficulty and get a question first!");
-            return;
-        }
+            if (!currentAnswer) {
+                alert("Please select a difficulty and get a question first!");
+                return;
+            }
 
-        if (userInput === currentAnswer) {
-            window.location.href = "success.html";
-        } else {
-            window.location.href = "incorrect.html";
-        }
-    });
+            if (userInput === currentAnswer) {
+                window.location.href = "success.html";
+            } else {
+                window.location.href = "incorrect.html";
+            }
+        });
+    }
+    
+    // ChatGPT code
+    // Home Button (Success or Fail Page)
+    const homeBtn = document.getElementById("home-button");
+    if (homeBtn) {
+        homeBtn.addEventListener("click", () => {
+            window.location.href = "index.html";
+        });
+    }
 });
 
 console.log("Connected!")
