@@ -29,6 +29,7 @@ const questions = {
 
 // Function to generate random question based off difficulty chosen
 function askQuestion(difficulty) {
+
     const questionBox = document.getElementById("question-area");
     const questionSet = questions[difficulty];
     const random = questionSet[Math.floor(Math.random() * questionSet.length)];
@@ -38,7 +39,8 @@ function askQuestion(difficulty) {
 
 // Adds Event Listeners once page is fully loaded 
 document.addEventListener("DOMContentLoaded", () => {
-     //ChatGPT code
+
+     // ChatGPT code
      // Difficulty Buttons (Game Page Only)
     const easyBtn = document.querySelector(".btn--green");
     const mediumBtn = document.querySelector(".btn--yellow");
