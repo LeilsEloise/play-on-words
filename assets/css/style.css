@@ -177,3 +177,76 @@ body {
     background-color: red;
     color: white;
 }
+
+/* ================================
+   ChatGPT Media Query CSS - MOBILE STYLES
+   For screens 600px and smaller
+================================ */
+@media (max-width: 600px) {
+
+    /* Logo */
+    .logo {
+        width: 180px;
+        height: 180px;
+        margin-top: 20px;
+    }
+
+    /* Heading & paragraphs */
+    .heading {
+        font-size: 3rem;
+        margin-bottom: 5px;
+    }
+
+    .header-p {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+        padding: 0 10px;
+    }
+
+    /* Buttons in difficulty area */
+    .btn--big {
+        width: 90px;
+        height: 90px;
+        font-size: 1.1rem;
+        border-width: 6px;
+    }
+
+    .controls-area {
+        gap: 15px;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    /* Question text */
+    #question-area {
+        font-size: 1.6rem;
+        padding: 10px;
+        min-height: 50px;
+    }
+
+    /* Input area */
+    #user-answer {
+        width: 85%;
+        max-width: none;
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    #submit-answer {
+        font-size: 1.2rem;
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+
+    /* Success & Incorrect pages */
+    .resultImage {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    #home-button {
+        font-size: 1.3rem;
+        padding: 10px 20px;
+        margin-top: 20px;
+    }
+}
