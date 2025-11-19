@@ -4,7 +4,7 @@ const questions = {
     easy: [
         { q: "The pet that is referred to as 'man's best friend'?", a: "dog" },
         { q: "The three letter word which means the opposite of happy?", a: "sad" },
-        { q: "The only three letter colour in the primary colour wheel?", a: "sad" } 
+        { q: "The only three letter colour in the primary colour wheel?", a: "red" } 
     ],
     medium: [
         { q: "An object with pages that can either be filled with information or blank?", a: "book" },
