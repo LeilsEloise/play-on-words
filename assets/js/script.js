@@ -64,6 +64,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 return;
             }
 
+            if (userInput === "") {
+            alert("Enter an answer first!");
+            return;
+            }
+
             if (userInput === currentAnswer) {
                 window.location.href = "success.html";
             } else {
